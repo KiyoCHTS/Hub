@@ -81,28 +81,6 @@ object.UICorner = instance.new("UICorner", {
     Parent = object.TopBar;
 })
 
-object.Frame = instance.new("Frame", {
-    BackgroundColor3 = Color3.fromRGB(51, 61, 77);
-    BorderColor3 = Color3.fromRGB(0, 0, 0);
-    BorderSizePixel = 0;
-    Parent = object.TopBar;
-    Position = UDim2.new(0, 0, 1, 0);
-    Size = UDim2.new(0, 380, 0, 1);
-})
-
-})
-
-object.ImageLabel = instance.new("ImageLabel", {
-    BackgroundColor3 = Color3.fromRGB(255, 255, 255);
-    BackgroundTransparency = 1.000;
-    BorderColor3 = Color3.fromRGB(0, 0, 0);
-    BorderSizePixel = 0;
-    Image = Icon;
-    Parent = object.Main;
-    Position = UDim2.new(0.002, 0, 0, 0);
-    Size = UDim2.new(0, 35, 0, 35);
-})
-
 
 local REQ = (syn and syn.request) or (identifyexecutor() == 'Fluxus' and request) or http_request or http.request or request
 local HttpService = game:GetService("HttpService")
@@ -453,7 +431,7 @@ end
             domain = newmm
             function newmm:NewParagraph(cf)
                 local paragraphnew
-                newTitle = cf.Title or "Tsuo Hub"
+                newTitle = cf.Title or "Kiyo Hub"
                 newContent = cf.Content or "MMB"
                 paragraphnew =
                     domain:AddParagraph(
@@ -463,7 +441,7 @@ end
                     }
                 )
                 function paragraphnew:Set(cf2)
-                    newTitle = cf2.Title or "Tsuo Hub"
+                    newTitle = cf2.Title or "Kiyo Hub"
                     newContent = cf2.Content or "MMB"
                     paragraphnew:SetTitle(newTitle)
                     paragraphnew:SetDesc(newContent)
